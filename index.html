@@ -3,53 +3,179 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KoryFinds - Curated Deals & Products</title>
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>KoryFinds - Curated Deals, Top Tech & Essential Gear</title>
+  <meta name="title" content="KoryFinds - Curated Deals, Top Tech & Essential Gear">
+  <meta name="description" content="Discover handpicked daily deals, top-rated tech gadgets, home essentials, and everyday carry gear recommendations at KoryFinds.">
+  <link rel="canonical" href="https://koryfinds.com/">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://koryfinds.com/">
+  <meta property="og:title" content="KoryFinds - Curated Deals, Top Tech & Essential Gear">
+  <meta property="og:description" content="Discover handpicked daily deals, top-rated tech gadgets, home essentials, and everyday carry gear recommendations at KoryFinds.">
+
+  <!-- Twitter Meta -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://koryfinds.com/">
+  <meta property="twitter:title" content="KoryFinds - Curated Deals, Top Tech & Essential Gear">
+  <meta property="twitter:description" content="Discover handpicked daily deals, top-rated tech gadgets, home essentials, and everyday carry gear recommendations at KoryFinds.">
+
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col justify-between">
+
   <div>
-    <!-- Navigation Header -->
-    <header class="bg-white border-b sticky top-0 z-50">
-      <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 class="text-xl font-bold text-blue-600">KoryFinds</h1>
-        <span class="text-xs text-gray-400">Affiliate Picks</span>
+    <!-- Sticky Navigation Bar -->
+    <header class="bg-white border-b sticky top-0 z-50 shadow-sm">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center gap-4">
+        <a href="/" class="text-2xl font-black tracking-tight text-blue-600">KoryFinds</a>
+        
+        <!-- Navigation Links -->
+        <nav class="flex items-center space-x-6 text-sm font-medium text-gray-600">
+          <a href="/" class="text-blue-600 font-semibold">Home</a>
+          <a href="/about.html" class="hover:text-blue-600 transition">About</a>
+          <a href="/contact.html" class="hover:text-blue-600 transition">Contact</a>
+          <a href="/privacy.html" class="hover:text-blue-600 transition">Privacy</a>
+        </nav>
       </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="max-w-5xl mx-auto px-4 py-12">
-      <div class="text-center mb-10">
-        <h2 class="text-3xl font-extrabold text-gray-900 mb-2">Top Curated Deals</h2>
-        <p class="text-gray-500 text-sm">Handpicked quality finds updated daily.</p>
+    <!-- Hero Banner -->
+    <section class="bg-white border-b py-12 px-4 text-center">
+      <div class="max-w-3xl mx-auto">
+        <span class="bg-blue-50 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Handpicked Deals</span>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-4 mb-3 tracking-tight">Curated Tech, Home & Gear Finds</h1>
+        <p class="text-gray-600 text-base md:text-lg mb-8 leading-relaxed">
+          We research customer feedback, compare features, and track deals so you don't have to. Real recommendations, zero clutter.
+        </p>
+
+        <!-- Category Filters -->
+        <div class="flex flex-wrap justify-center gap-2 text-sm font-medium text-gray-600">
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-sm">All Picks</button>
+          <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg transition">Tech & Gadgets</button>
+          <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg transition">Home Essentials</button>
+          <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg transition">Everyday Carry</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Grid -->
+    <main class="max-w-6xl mx-auto px-4 py-12">
+      <div class="flex justify-between items-center mb-8">
+        <h2 class="text-2xl font-bold text-gray-900">Featured Recommendations</h2>
+        <span class="text-xs text-gray-500 font-medium">Updated Daily</span>
       </div>
 
-      <!-- Product Cards Container -->
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white rounded-xl border border-gray-100 p-5 shadow-sm flex flex-col justify-between">
-          <div>
-            <div class="h-40 bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 text-sm mb-4">Product Image</div>
-            <h3 class="font-bold text-lg mb-2">Featured Product Title</h3>
-            <p class="text-xs text-gray-500 mb-4">Short description highlighting key specifications and benefits.</p>
+      <!-- 3-Column Product Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Product Card 1 Placeholder -->
+        <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+          <div class="p-5">
+            <div class="relative bg-gray-100 h-52 rounded-xl flex items-center justify-center text-gray-400 font-medium text-sm mb-4">
+              <span>Product Image Placeholder</span>
+              <span class="absolute top-3 right-3 bg-amber-500 text-white text-xs font-bold px-2 py-1 rounded-md">Top Pick</span>
+            </div>
+            <div class="text-xs text-blue-600 font-semibold uppercase tracking-wider mb-1">Tech & Gadgets</div>
+            <h3 class="font-bold text-lg text-gray-900 mb-2 leading-snug">Featured Product Title 1</h3>
+            <p class="text-gray-600 text-xs leading-relaxed mb-4">
+              A high-level snippet highlighting why this item was selected, key features, performance metrics, and overall value.
+            </p>
           </div>
-          <a href="#" target="_blank" rel="nofollow noopener" class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm py-2 rounded-lg text-center transition">View on Amazon</a>
+          <div class="p-5 pt-0 border-t border-gray-100 mt-auto flex items-center justify-between">
+            <div>
+              <span class="text-xs text-gray-400 block">Best Price</span>
+              <span class="text-lg font-bold text-gray-900">$00.00</span>
+            </div>
+            <a href="#" target="_blank" rel="nofollow noopener" class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold py-2.5 px-4 rounded-xl transition">View on Amazon &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Product Card 2 Placeholder -->
+        <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+          <div class="p-5">
+            <div class="relative bg-gray-100 h-52 rounded-xl flex items-center justify-center text-gray-400 font-medium text-sm mb-4">
+              <span>Product Image Placeholder</span>
+            </div>
+            <div class="text-xs text-blue-600 font-semibold uppercase tracking-wider mb-1">Home Essentials</div>
+            <h3 class="font-bold text-lg text-gray-900 mb-2 leading-snug">Featured Product Title 2</h3>
+            <p class="text-gray-600 text-xs leading-relaxed mb-4">
+              A concise overview explaining how this home setup addition improves daily comfort, durability, or organization.
+            </p>
+          </div>
+          <div class="p-5 pt-0 border-t border-gray-100 mt-auto flex items-center justify-between">
+            <div>
+              <span class="text-xs text-gray-400 block">Best Price</span>
+              <span class="text-lg font-bold text-gray-900">$00.00</span>
+            </div>
+            <a href="#" target="_blank" rel="nofollow noopener" class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold py-2.5 px-4 rounded-xl transition">View on Amazon &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Product Card 3 Placeholder -->
+        <div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+          <div class="p-5">
+            <div class="relative bg-gray-100 h-52 rounded-xl flex items-center justify-center text-gray-400 font-medium text-sm mb-4">
+              <span>Product Image Placeholder</span>
+              <span class="absolute top-3 right-3 bg-emerald-600 text-white text-xs font-bold px-2 py-1 rounded-md">Best Value</span>
+            </div>
+            <div class="text-xs text-blue-600 font-semibold uppercase tracking-wider mb-1">Everyday Carry</div>
+            <h3 class="font-bold text-lg text-gray-900 mb-2 leading-snug">Featured Product Title 3</h3>
+            <p class="text-gray-600 text-xs leading-relaxed mb-4">
+              Detailed breakdown covering build material, portability, battery performance, and practical everyday use cases.
+            </p>
+          </div>
+          <div class="p-5 pt-0 border-t border-gray-100 mt-auto flex items-center justify-between">
+            <div>
+              <span class="text-xs text-gray-400 block">Best Price</span>
+              <span class="text-lg font-bold text-gray-900">$00.00</span>
+            </div>
+            <a href="#" target="_blank" rel="nofollow noopener" class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold py-2.5 px-4 rounded-xl transition">View on Amazon &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Newsletter Banner -->
+      <div class="mt-16 bg-blue-600 text-white rounded-2xl p-8 text-center md:flex md:items-center md:justify-between md:text-left">
+        <div>
+          <h3 class="text-xl font-bold">Never Miss a Great Deal</h3>
+          <p class="text-blue-100 text-xs mt-1">Get our weekly roundup of top-rated curated gear sent directly to your inbox.</p>
+        </div>
+        <div class="mt-4 md:mt-0 flex gap-2 justify-center">
+          <input type="email" placeholder="Enter your email" class="px-4 py-2 text-sm text-gray-900 rounded-lg focus:outline-none w-64">
+          <button class="bg-gray-900 hover:bg-black text-white text-xs font-semibold px-4 py-2 rounded-lg transition">Subscribe</button>
         </div>
       </div>
     </main>
   </div>
 
-  <!-- Mandatory Amazon Affiliate Footer -->
-  <footer class="bg-white border-t mt-12 py-8 text-xs text-gray-500">
-    <div class="max-w-5xl mx-auto px-4 text-center space-y-3">
-      <p class="font-medium text-gray-600">
+  <!-- Mandatory Compliance Footer -->
+  <footer class="bg-white border-t py-10 text-xs text-gray-500">
+    <div class="max-w-6xl mx-auto px-4 text-center space-y-4">
+      <p class="font-semibold text-gray-700">
         Amazon Associate Disclosure
       </p>
       <p class="max-w-2xl mx-auto leading-relaxed">
         As an Amazon Associate I earn from qualifying purchases. KoryFinds is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.
       </p>
-      <div class="pt-2 text-gray-400">
+      
+      <!-- Trust Pages Navigation -->
+      <div class="pt-2 text-gray-500 space-x-3 font-medium">
+        <a href="/about.html" class="hover:underline">About Us</a> &bull;
+        <a href="/contact.html" class="hover:underline">Contact Us</a> &bull;
+        <a href="/privacy.html" class="hover:underline">Privacy Policy</a> &bull;
+        <a href="/disclosure.html" class="hover:underline">Affiliate Disclosure</a>
+      </div>
+
+      <div class="text-gray-400 pt-2">
         &copy; 2026 KoryFinds. All rights reserved.
       </div>
     </div>
   </footer>
+
 </body>
 </html>
