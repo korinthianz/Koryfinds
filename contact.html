@@ -35,19 +35,34 @@
 <body class="bg-[#F5F1E8] text-[#485268] font-sans min-h-screen flex flex-col justify-between selection:bg-[#D97745] selection:text-white relative overflow-x-hidden" style="background-image: linear-gradient(#e6e0d5 1px, transparent 1px), linear-gradient(90deg, #e6e0d5 1px, transparent 1px); background-size: 32px 32px;">
 
   <div>
-    <!-- Header / Navigation -->
+    <!-- Header / Navigation with Currency Switcher -->
     <header class="bg-[#F5F1E8]/90 backdrop-blur-md border-b border-[#E4DDCF] sticky top-0 z-50">
       <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         <a href="/" class="text-2xl font-black tracking-tight text-[#1E2A44] uppercase">
           KORYFINDS<span class="text-[#D97745]">.</span>
         </a>
-        <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-[#485268]">
-          <a href="/" class="hover:text-[#1E2A44] transition">Finds</a>
-          <a href="/about.html" class="hover:text-[#1E2A44] transition">Reviews</a>
-          <a href="/deals.html" class="hover:text-[#1E2A44] transition">Deals</a>
-          <a href="/about.html" class="hover:text-[#1E2A44] transition">About</a>
-          <a href="/contact.html" class="text-[#1E2A44] border-b-2 border-[#D97745] pb-0.5">Contact</a>
-        </nav>
+
+        <div class="flex items-center space-x-6">
+          <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-[#485268]">
+            <a href="/" class="hover:text-[#1E2A44] transition">Finds</a>
+            <a href="/about.html" class="hover:text-[#1E2A44] transition">Reviews</a>
+            <a href="/deals.html" class="hover:text-[#1E2A44] transition">Deals</a>
+            <a href="/about.html" class="hover:text-[#1E2A44] transition">About</a>
+            <a href="/contact.html" class="text-[#1E2A44] border-b-2 border-[#D97745] pb-0.5">Contact</a>
+          </nav>
+
+          <!-- Country / Currency Switcher Dropdown -->
+          <div class="relative">
+            <select id="countrySelector" class="bg-white border border-[#E4DDCF] hover:border-[#D97745] text-[#1E2A44] text-xs font-bold py-2 px-3 rounded-xl shadow-sm focus:outline-none focus:border-[#D97745] transition cursor-pointer">
+              <option value="US" selected>🇺🇸 USD ($)</option>
+              <option value="GB">🇬🇧 GBP (£)</option>
+              <option value="EU">🇪🇺 EUR (€)</option>
+              <option value="NG">🇳🇬 NGN (₦)</option>
+              <option value="CA">🇨🇦 CAD ($)</option>
+              <option value="AU">🇦🇺 AUD ($)</option>
+            </select>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -86,10 +101,10 @@
         </div>
       </section>
 
-      <!-- Main Layout Container: Form First on Mobile (`flex-col-reverse` or structural reordering) -->
+      <!-- Main Layout Container -->
       <div class="grid lg:grid-cols-12 gap-8 items-start">
         
-        <!-- Contact Form Block (Appears FIRST on mobile for better UX) -->
+        <!-- Contact Form Block with Working Formspree URL -->
         <div class="lg:col-span-7 lg:order-1 order-1 bg-white border border-[#E4DDCF] p-6 sm:p-8 rounded-2xl shadow-sm">
           
           <div class="mb-6">
@@ -101,7 +116,7 @@
             </p>
           </div>
 
-          <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-5">
+          <form action="https://formspree.io/f/xyeyaggv" method="POST" class="space-y-5">
             
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
@@ -130,7 +145,7 @@
           </form>
         </div>
 
-        <!-- Contact Information Blocks (Appears Below Form on Mobile) -->
+        <!-- Contact Information Blocks -->
         <div class="lg:col-span-5 lg:order-2 order-2 space-y-4">
           
           <div class="bg-white/75 border border-[#E4DDCF] p-6 rounded-xl shadow-sm">
@@ -216,6 +231,17 @@
       "contactType": "Customer Support"
     }
   }
+  </script>
+
+  <!-- Currency Switcher Hook Script -->
+  <script>
+    const countrySelector = document.getElementById('countrySelector');
+    if(countrySelector) {
+      countrySelector.addEventListener('change', (e) => {
+        const selectedCountry = e.target.value;
+        console.log("User manually switched currency region to: " + selectedCountry);
+      });
+    }
   </script>
 </body>
 </html>
