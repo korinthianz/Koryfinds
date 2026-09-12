@@ -35,6 +35,17 @@
     }
   </script>
 
+  <!-- Custom Scrollbar & Snap Styles for Slider -->
+  <style>
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+
   <!-- Structured Data for SEO (WebSite & Organization) -->
   <script type="application/ld+json">
   {
@@ -59,13 +70,28 @@
         <a href="/" class="text-2xl font-black tracking-tight text-[#1E2A44] uppercase">
           KORYFINDS<span class="text-[#D97745]">.</span>
         </a>
-        <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-[#485268]">
-          <a href="/" class="text-[#1E2A44] border-b-2 border-[#D97745] pb-0.5">Finds</a>
-          <a href="/about.html" class="hover:text-[#1E2A44] transition">Reviews</a>
-          <a href="/deals.html" class="hover:text-[#1E2A44] transition">Deals</a>
-          <a href="/about.html" class="hover:text-[#1E2A44] transition">About</a>
-          <a href="/contact.html" class="hover:text-[#1E2A44] transition">Contact</a>
-        </nav>
+
+        <div class="flex items-center space-x-6">
+          <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-[#485268]">
+            <a href="/" class="text-[#1E2A44] border-b-2 border-[#D97745] pb-0.5">Finds</a>
+            <a href="/about.html" class="hover:text-[#1E2A44] transition">Reviews</a>
+            <a href="/deals.html" class="hover:text-[#1E2A44] transition">Deals</a>
+            <a href="/about.html" class="hover:text-[#1E2A44] transition">About</a>
+            <a href="/contact.html" class="hover:text-[#1E2A44] transition">Contact</a>
+          </nav>
+
+          <!-- Country / Currency Switcher Dropdown -->
+          <div class="relative">
+            <select id="countrySelector" class="bg-white border border-[#E4DDCF] hover:border-[#D97745] text-[#1E2A44] text-xs font-bold py-2 px-3 rounded-xl shadow-sm focus:outline-none focus:border-[#D97745] transition cursor-pointer">
+              <option value="US" selected>🇺🇸 USD ($)</option>
+              <option value="GB">🇬🇧 GBP (£)</option>
+              <option value="EU">🇪🇺 EUR (€)</option>
+              <option value="NG">🇳🇬 NGN (₦)</option>
+              <option value="CA">🇨🇦 CAD ($)</option>
+              <option value="AU">🇦🇺 AUD ($)</option>
+            </select>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -73,7 +99,7 @@
     <main class="max-w-6xl mx-auto px-6 py-12 sm:py-16">
       
       <!-- Hero Section -->
-      <section class="text-center max-w-3xl mx-auto mb-16">
+      <section class="text-center max-w-3xl mx-auto mb-12">
         <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest bg-[#D97745]/10 text-[#D97745] border border-[#D97745]/20 mb-3">
           Independent Curation
         </span>
@@ -83,6 +109,184 @@
         <p class="text-[#485268] text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
           We sift through thousands of products to uncover the absolute best tech gear, home essentials, and everyday carry items worth your money.
         </p>
+      </section>
+
+      <!-- EXPLORE DEPARTMENTS GRID -->
+      <section class="mb-16">
+        <div class="mb-6">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#D97745]">Categories</span>
+          <h2 class="text-2xl font-black text-[#1E2A44] uppercase tracking-tight">Explore Departments</h2>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+          <a href="#" class="group bg-white border border-[#E4DDCF] rounded-2xl p-3 shadow-sm hover:border-[#D97745] transition flex flex-col items-center text-center">
+            <div class="w-full h-28 bg-[#F5F1E8] rounded-xl mb-3 overflow-hidden flex items-center justify-center border border-[#E4DDCF]/60">
+              <span class="text-[10px] font-semibold text-[#485268]/50">[ Image ]</span>
+            </div>
+            <span class="text-xs font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition">Tech & Gadgets</span>
+          </a>
+          <a href="#" class="group bg-white border border-[#E4DDCF] rounded-2xl p-3 shadow-sm hover:border-[#D97745] transition flex flex-col items-center text-center">
+            <div class="w-full h-28 bg-[#F5F1E8] rounded-xl mb-3 overflow-hidden flex items-center justify-center border border-[#E4DDCF]/60">
+              <span class="text-[10px] font-semibold text-[#485268]/50">[ Image ]</span>
+            </div>
+            <span class="text-xs font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition">Home & Kitchen</span>
+          </a>
+          <a href="#" class="group bg-white border border-[#E4DDCF] rounded-2xl p-3 shadow-sm hover:border-[#D97745] transition flex flex-col items-center text-center">
+            <div class="w-full h-28 bg-[#F5F1E8] rounded-xl mb-3 overflow-hidden flex items-center justify-center border border-[#E4DDCF]/60">
+              <span class="text-[10px] font-semibold text-[#485268]/50">[ Image ]</span>
+            </div>
+            <span class="text-xs font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition">Everyday Carry</span>
+          </a>
+          <a href="#" class="group bg-white border border-[#E4DDCF] rounded-2xl p-3 shadow-sm hover:border-[#D97745] transition flex flex-col items-center text-center">
+            <div class="w-full h-28 bg-[#F5F1E8] rounded-xl mb-3 overflow-hidden flex items-center justify-center border border-[#E4DDCF]/60">
+              <span class="text-[10px] font-semibold text-[#485268]/50">[ Image ]</span>
+            </div>
+            <span class="text-xs font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition">Workspace</span>
+          </a>
+          <a href="#" class="group bg-white border border-[#E4DDCF] rounded-2xl p-3 shadow-sm hover:border-[#D97745] transition flex flex-col items-center text-center">
+            <div class="w-full h-28 bg-[#F5F1E8] rounded-xl mb-3 overflow-hidden flex items-center justify-center border border-[#E4DDCF]/60">
+              <span class="text-[10px] font-semibold text-[#485268]/50">[ Image ]</span>
+            </div>
+            <span class="text-xs font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition">Audio & Sound</span>
+          </a>
+          <a href="#" class="group bg-white border border-[#E4DDCF] rounded-2xl p-3 shadow-sm hover:border-[#D97745] transition flex flex-col items-center text-center">
+            <div class="w-full h-28 bg-[#F5F1E8] rounded-xl mb-3 overflow-hidden flex items-center justify-center border border-[#E4DDCF]/60">
+              <span class="text-[10px] font-semibold text-[#485268]/50">[ Image ]</span>
+            </div>
+            <span class="text-xs font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition">Daily Deals</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- FEATURED PRODUCTS SLIDING CAROUSEL -->
+      <section class="mb-16">
+        <div class="flex justify-between items-end mb-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-[#D97745]">Trending Now</span>
+            <h2 class="text-2xl font-black text-[#1E2A44] uppercase tracking-tight">Editor's Spotlight</h2>
+          </div>
+          <div class="hidden sm:flex gap-2">
+            <button id="slideLeft" class="bg-white border border-[#E4DDCF] hover:border-[#D97745] text-[#1E2A44] p-2.5 rounded-full shadow-sm transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button id="slideRight" class="bg-white border border-[#E4DDCF] hover:border-[#D97745] text-[#1E2A44] p-2.5 rounded-full shadow-sm transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Carousel Container -->
+        <div id="productCarousel" class="flex gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-4 scroll-smooth">
+          
+          <!-- Slide Card 1 -->
+          <div class="min-w-[300px] sm:min-w-[360px] max-w-[360px] snap-start bg-white border border-[#E4DDCF] rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between group hover:border-[#D97745] transition duration-300">
+            <div>
+              <div class="bg-[#F5F1E8] h-48 relative overflow-hidden flex items-center justify-center border-b border-[#E4DDCF]">
+                <span class="absolute top-3 left-3 bg-[#D97745] text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">Top Pick</span>
+                <span class="text-xs font-semibold text-[#485268]/50">[ Product Image Placeholder ]</span>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between text-xs text-[#D97745] font-bold uppercase tracking-wider mb-2">
+                  <span>Wireless Audio</span>
+                  <span class="flex items-center gap-1 text-[#1E2A44]">★ 4.9/5</span>
+                </div>
+                <h3 class="text-lg font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition mb-2">
+                  ProActive Noise-Canceling Earbuds
+                </h3>
+                <p class="text-xs text-[#485268] leading-relaxed mb-4">
+                  Exceptional sound clarity, comfortable ergonomic fit, and industry-leading battery life.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <a href="https://amazon.com" target="_blank" rel="nofollow noopener" class="w-full bg-[#1E2A44] hover:bg-[#D97745] text-white font-bold py-3 px-4 rounded-xl text-xs uppercase tracking-wider transition duration-300 shadow-sm flex items-center justify-center">
+                <span>Check Price on Amazon</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Slide Card 2 -->
+          <div class="min-w-[300px] sm:min-w-[360px] max-w-[360px] snap-start bg-white border border-[#E4DDCF] rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between group hover:border-[#D97745] transition duration-300">
+            <div>
+              <div class="bg-[#F5F1E8] h-48 relative overflow-hidden flex items-center justify-center border-b border-[#E4DDCF]">
+                <span class="absolute top-3 left-3 bg-[#1E2A44] text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">Everyday Carry</span>
+                <span class="text-xs font-semibold text-[#485268]/50">[ Product Image Placeholder ]</span>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between text-xs text-[#D97745] font-bold uppercase tracking-wider mb-2">
+                  <span>Gear & Utility</span>
+                  <span class="flex items-center gap-1 text-[#1E2A44]">★ 4.8/5</span>
+                </div>
+                <h3 class="text-lg font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition mb-2">
+                  Minimalist Titanium Wallet
+                </h3>
+                <p class="text-xs text-[#485268] leading-relaxed mb-4">
+                  Slim profile, RFID blocking protection, and durable aerospace-grade titanium build.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <a href="https://amazon.com" target="_blank" rel="nofollow noopener" class="w-full bg-[#1E2A44] hover:bg-[#D97745] text-white font-bold py-3 px-4 rounded-xl text-xs uppercase tracking-wider transition duration-300 shadow-sm flex items-center justify-center">
+                <span>Check Price on Amazon</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Slide Card 3 -->
+          <div class="min-w-[300px] sm:min-w-[360px] max-w-[360px] snap-start bg-white border border-[#E4DDCF] rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between group hover:border-[#D97745] transition duration-300">
+            <div>
+              <div class="bg-[#F5F1E8] h-48 relative overflow-hidden flex items-center justify-center border-b border-[#E4DDCF]">
+                <span class="absolute top-3 left-3 bg-[#1E2A44] text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">Workspace</span>
+                <span class="text-xs font-semibold text-[#485268]/50">[ Product Image Placeholder ]</span>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between text-xs text-[#D97745] font-bold uppercase tracking-wider mb-2">
+                  <span>Desk Setup</span>
+                  <span class="flex items-center gap-1 text-[#1E2A44]">★ 4.9/5</span>
+                </div>
+                <h3 class="text-lg font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition mb-2">
+                  Aluminum Laptop Stand
+                </h3>
+                <p class="text-xs text-[#485268] leading-relaxed mb-4">
+                  Improve posture and desk ergonomics with a sturdy, foldable aluminum stand.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <a href="https://amazon.com" target="_blank" rel="nofollow noopener" class="w-full bg-[#1E2A44] hover:bg-[#D97745] text-white font-bold py-3 px-4 rounded-xl text-xs uppercase tracking-wider transition duration-300 shadow-sm flex items-center justify-center">
+                <span>Check Price on Amazon</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Slide Card 4 -->
+          <div class="min-w-[300px] sm:min-w-[360px] max-w-[360px] snap-start bg-white border border-[#E4DDCF] rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between group hover:border-[#D97745] transition duration-300">
+            <div>
+              <div class="bg-[#F5F1E8] h-48 relative overflow-hidden flex items-center justify-center border-b border-[#E4DDCF]">
+                <span class="absolute top-3 left-3 bg-[#1E2A44] text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">Home Tech</span>
+                <span class="text-xs font-semibold text-[#485268]/50">[ Product Image Placeholder ]</span>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between text-xs text-[#D97745] font-bold uppercase tracking-wider mb-2">
+                  <span>Smart Home</span>
+                  <span class="flex items-center gap-1 text-[#1E2A44]">★ 4.7/5</span>
+                </div>
+                <h3 class="text-lg font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition mb-2">
+                  Ambient RGB Desk Light Bar
+                </h3>
+                <p class="text-xs text-[#485268] leading-relaxed mb-4">
+                  Customizable lighting modes to reduce eye strain and upgrade your workspace aesthetic instantly.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <a href="https://amazon.com" target="_blank" rel="nofollow noopener" class="w-full bg-[#1E2A44] hover:bg-[#D97745] text-white font-bold py-3 px-4 rounded-xl text-xs uppercase tracking-wider transition duration-300 shadow-sm flex items-center justify-center">
+                <span>Check Price on Amazon</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
       </section>
 
       <!-- Trust Stats Bar -->
@@ -114,7 +318,7 @@
         <button class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-white/70 border border-[#E4DDCF] text-[#485268] hover:border-[#D97745] hover:text-[#1E2A44] transition">Deals</button>
       </div>
 
-      <!-- Curated Product Grid -->
+      <!-- Main Product Grid Section -->
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
         
         <!-- Product Card 1 -->
@@ -122,7 +326,6 @@
           <div>
             <div class="bg-[#F5F1E8] h-52 relative overflow-hidden flex items-center justify-center border-b border-[#E4DDCF]">
               <span class="absolute top-3 left-3 bg-[#1E2A44] text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">Tech Pick</span>
-              <!-- Placeholder for product image -->
               <span class="text-xs font-semibold text-[#485268]/50">[ Product Image Placeholder ]</span>
             </div>
             <div class="p-6">
@@ -245,6 +448,33 @@
       </div>
     </div>
   </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Carousel Navigation
+    const carousel = document.getElementById('productCarousel');
+    const btnLeft = document.getElementById('slideLeft');
+    const btnRight = document.getElementById('slideRight');
+
+    if(btnLeft && btnRight && carousel) {
+      btnLeft.addEventListener('click', () => {
+        carousel.scrollBy({ left: -380, behavior: 'smooth' });
+      });
+      btnRight.addEventListener('click', () => {
+        carousel.scrollBy({ left: 380, behavior: 'smooth' });
+      });
+    }
+
+    // Country/Currency Selector Logic Hook
+    const countrySelector = document.getElementById('countrySelector');
+    if(countrySelector) {
+      countrySelector.addEventListener('change', (e) => {
+        const selectedCountry = e.target.value;
+        // You can attach your geolocation/pricing currency conversion function here
+        console.log("User manually switched currency region to: " + selectedCountry);
+      });
+    }
+  </script>
 
 </body>
 </html>
