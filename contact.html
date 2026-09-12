@@ -41,7 +41,7 @@
         <a href="/" class="text-2xl font-black tracking-tight text-[#1E2A44] uppercase">
           KORYFINDS<span class="text-[#D97745]">.</span>
         </a>
-        <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-[#485268]">
+        <nav class="flex items-center space-x-8 text-sm font-semibold text-[#485268]">
           <a href="/" class="hover:text-[#1E2A44] transition">Finds</a>
           <a href="/about.html" class="hover:text-[#1E2A44] transition">Reviews</a>
           <a href="/deals.html" class="hover:text-[#1E2A44] transition">Deals</a>
@@ -51,23 +51,23 @@
       </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-6 py-12 sm:py-16">
+    <main class="max-w-4xl mx-auto px-6 py-16">
       
       <!-- Editorial Hero Header -->
-      <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+      <div class="text-center max-w-2xl mx-auto mb-16">
         <span class="inline-block text-xs font-bold uppercase tracking-widest text-[#D97745] mb-3">
           Direct Outreach
         </span>
-        <h1 class="text-4xl sm:text-6xl font-black uppercase tracking-tight text-[#1E2A44] mb-4 sm:mb-6 leading-none">
+        <h1 class="text-5xl sm:text-6xl font-black uppercase tracking-tight text-[#1E2A44] mb-6 leading-none">
           THE INTERNET'S <br>BEST FINDS.
         </h1>
-        <p class="text-[#485268] text-sm sm:text-base leading-relaxed">
+        <p class="text-[#485268] text-base leading-relaxed">
           Have a product recommendation, a deal tip, or a partnership inquiry? Drop us a message below and we’ll get back to you shortly.
         </p>
       </div>
 
       <!-- Trust Stats Section -->
-      <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 sm:mb-16">
+      <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
         <div class="rounded-xl border border-[#E4DDCF] bg-white/60 p-5 shadow-sm">
           <div class="text-2xl font-extrabold text-[#1E2A44]">Daily</div>
           <p class="text-xs font-medium text-[#485268] mt-1">New Finds Published</p>
@@ -86,11 +86,30 @@
         </div>
       </section>
 
-      <!-- Main Layout Container: Form First on Mobile (`flex-col-reverse` or structural reordering) -->
-      <div class="grid lg:grid-cols-12 gap-8 items-start">
+      <div class="grid md:grid-cols-12 gap-8 items-start">
         
-        <!-- Contact Form Block (Appears FIRST on mobile for better UX) -->
-        <div class="lg:col-span-7 lg:order-1 order-1 bg-white border border-[#E4DDCF] p-6 sm:p-8 rounded-2xl shadow-sm">
+        <!-- Contact Information Blocks -->
+        <div class="md:col-span-5 space-y-4">
+          
+          <div class="bg-white/70 border border-[#E4DDCF] p-6 rounded-xl shadow-sm">
+            <h3 class="text-xs font-bold text-[#1E2A44] uppercase tracking-wider mb-1">Email Outreach</h3>
+            <a href="mailto:contact@koryfinds.com" class="text-sm font-semibold text-[#D97745] hover:underline">contact@koryfinds.com</a>
+          </div>
+
+          <div class="bg-white/70 border border-[#E4DDCF] p-6 rounded-xl shadow-sm">
+            <h3 class="text-xs font-bold text-[#1E2A44] uppercase tracking-wider mb-1">Average Response</h3>
+            <p class="text-sm font-semibold text-[#485268]">Within 24–48 hours</p>
+          </div>
+
+          <div class="bg-white/70 border border-[#E4DDCF] p-6 rounded-xl shadow-sm">
+            <h3 class="text-xs font-bold text-[#1E2A44] uppercase tracking-wider mb-1">Editorial Integrity</h3>
+            <p class="text-sm font-semibold text-[#485268]">100% Independent Reviews</p>
+          </div>
+
+        </div>
+
+        <!-- Contact Form Block -->
+        <div class="md:col-span-7 bg-white border border-[#E4DDCF] p-8 rounded-2xl shadow-sm">
           
           <div class="mb-6">
             <h2 class="text-xl font-bold text-[#1E2A44] uppercase tracking-tight mb-2">
@@ -130,45 +149,25 @@
           </form>
         </div>
 
-        <!-- Contact Information Blocks (Appears Below Form on Mobile) -->
-        <div class="lg:col-span-5 lg:order-2 order-2 space-y-4">
-          
-          <div class="bg-white/75 border border-[#E4DDCF] p-6 rounded-xl shadow-sm">
-            <h3 class="text-xs font-bold text-[#1E2A44] uppercase tracking-wider mb-1">Email Outreach</h3>
-            <a href="mailto:contact@koryfinds.com" class="text-sm font-semibold text-[#D97745] hover:underline">contact@koryfinds.com</a>
-          </div>
-
-          <div class="bg-white/75 border border-[#E4DDCF] p-6 rounded-xl shadow-sm">
-            <h3 class="text-xs font-bold text-[#1E2A44] uppercase tracking-wider mb-1">Average Response</h3>
-            <p class="text-sm font-semibold text-[#485268]">Within 24–48 hours</p>
-          </div>
-
-          <div class="bg-white/75 border border-[#E4DDCF] p-6 rounded-xl shadow-sm">
-            <h3 class="text-xs font-bold text-[#1E2A44] uppercase tracking-wider mb-1">Editorial Integrity</h3>
-            <p class="text-sm font-semibold text-[#485268]">100% Independent Reviews</p>
-          </div>
-
-        </div>
-
       </div>
 
       <!-- FAQ Section -->
       <section class="mt-20">
         <h2 class="text-2xl font-bold text-[#1E2A44] uppercase tracking-tight mb-6">Frequently Asked Questions</h2>
         <div class="space-y-4">
-          <div class="bg-white/75 border border-[#E4DDCF] rounded-xl p-6 shadow-sm">
+          <div class="bg-white/70 border border-[#E4DDCF] rounded-xl p-6 shadow-sm">
             <h3 class="font-bold text-[#1E2A44] mb-1">Do you accept product submissions?</h3>
             <p class="text-sm text-[#485268]">
               Yes. We're always looking for unique products, tools, and great finds.
             </p>
           </div>
-          <div class="bg-white/75 border border-[#E4DDCF] rounded-xl p-6 shadow-sm">
+          <div class="bg-white/70 border border-[#E4DDCF] rounded-xl p-6 shadow-sm">
             <h3 class="font-bold text-[#1E2A44] mb-1">Do you offer partnerships?</h3>
             <p class="text-sm text-[#485268]">
               We review partnership requests on a case-by-case basis. Please use the form above with your inquiry.
             </p>
           </div>
-          <div class="bg-white/75 border border-[#E4DDCF] rounded-xl p-6 shadow-sm">
+          <div class="bg-white/70 border border-[#E4DDCF] rounded-xl p-6 shadow-sm">
             <h3 class="font-bold text-[#1E2A44] mb-1">How are products selected?</h3>
             <p class="text-sm text-[#485268]">
               Products are chosen based on utility, quality, value, and relevance to our audience.
