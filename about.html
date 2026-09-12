@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>About Us - KoryFinds | Independent Product Curation & Reviews</title>
+  <meta name="description" content="Learn more about KoryFinds, our independent testing process, and how we curate the internet's best tech gear, everyday carry, and daily deals.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://koryfinds.com/about.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://koryfinds.com/about.html">
+  <meta property="og:title" content="About Us | KoryFinds">
+  <meta property="og:description" content="Discover hand-curated, independent product finds, tech gadgets, and deals.">
+  <meta property="og:image" content="https://koryfinds.com/og-image.jpg">
+
+  <!-- Fonts & Tailwind CSS CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#F5F1E8] text-[#485268] font-sans min-h-screen flex flex-col justify-between selection:bg-[#D97745] selection:text-white relative overflow-x-hidden" style="background-image: linear-gradient(#e6e0d5 1px, transparent 1px), linear-gradient(90deg, #e6e0d5 1px, transparent 1px); background-size: 32px 32px;">
+
+  <div>
+    <!-- Navigation Header -->
+    <header class="bg-[#F5F1E8]/90 backdrop-blur-md border-b border-[#E4DDCF] sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="/" class="text-2xl font-black tracking-tight text-[#1E2A44] uppercase">
+          KORYFINDS<span class="text-[#D97745]">.</span>
+        </a>
+
+        <div class="flex items-center space-x-6">
+          <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-[#485268]">
+            <a href="/" class="hover:text-[#1E2A44] transition">Finds</a>
+            <a href="/about.html" class="hover:text-[#1E2A44] transition">Reviews</a>
+            <a href="/deals.html" class="hover:text-[#1E2A44] transition">Deals</a>
+            <a href="/about.html" class="text-[#1E2A44] border-b-2 border-[#D97745] pb-0.5">About</a>
+            <a href="/contact.html" class="hover:text-[#1E2A44] transition">Contact</a>
+          </nav>
+
+          <!-- Country / Currency Switcher Dropdown -->
+          <div class="relative">
+            <select id="countrySelector" class="bg-white border border-[#E4DDCF] hover:border-[#D97745] text-[#1E2A44] text-xs font-bold py-2 px-3 rounded-xl shadow-sm focus:outline-none focus:border-[#D97745] transition cursor-pointer">
+              <option value="US" selected>🇺🇸 USD ($)</option>
+              <option value="GB">🇬🇧 GBP (£)</option>
+              <option value="EU">🇪🇺 EUR (€)</option>
+              <option value="NG">🇳🇬 NGN (₦)</option>
+              <option value="CA">🇨🇦 CAD ($)</option>
+              <option value="AU">🇦🇺 AUD ($)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 py-12 sm:py-16">
+      
+      <!-- Page Header -->
+      <section class="text-center max-w-2xl mx-auto mb-14">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest bg-[#D97745]/10 text-[#D97745] border border-[#D97745]/20 mb-3">
+          Our Mission
+        </span>
+        <h1 class="text-4xl sm:text-5xl font-black uppercase tracking-tight text-[#1E2A44] mb-6 leading-none">
+          ABOUT KORYFINDS
+        </h1>
+        <p class="text-[#485268] text-base leading-relaxed">
+          We cut through the noise of online shopping to bring you honest, hand-curated gear, tech gadgets, and daily deals worth your time and hard-earned money.
+        </p>
+      </section>
+
+      <!-- Main Story Card -->
+      <div class="bg-white border border-[#E4DDCF] rounded-3xl p-8 sm:p-12 shadow-sm space-y-8 mb-12">
+        <div>
+          <h2 class="text-xl font-black text-[#1E2A44] uppercase tracking-tight mb-4">Why We Started</h2>
+          <p class="text-sm text-[#485268] leading-relaxed mb-4">
+            Shopping online has become overwhelming. Between sponsored search results, thousands of generic items, and questionable user reviews, finding something genuinely high-quality feels like finding a needle in a haystack.
+          </p>
+          <p class="text-sm text-[#485268] leading-relaxed">
+            KoryFinds was built to fix that frustration. We act as an independent filter. Every item featured on our platform goes through a careful evaluation of build quality, everyday utility, user feedback, and long-term value before we ever recommend it to our readers.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-6 pt-4 border-t border-[#E4DDCF]">
+          <div>
+            <div class="text-2xl font-black text-[#1E2A44] mb-1">100%</div>
+            <h3 class="text-xs font-bold uppercase tracking-wider text-[#D97745] mb-2">Independent</h3>
+            <p class="text-xs text-[#485268] leading-relaxed">Our recommendations are driven by quality, testing, and utility—never outside pay-for-placement pressures.</p>
+          </div>
+          <div>
+            <div class="text-2xl font-black text-[#1E2A44] mb-1">Vetted</div>
+            <h3 class="text-xs font-bold uppercase tracking-wider text-[#D97745] mb-2">Rigorous Selection</h3>
+            <p class="text-xs text-[#485268] leading-relaxed">We focus heavily on durability, user satisfaction ratings, and real-world everyday performance.</p>
+          </div>
+          <div>
+            <div class="text-2xl font-black text-[#1E2A44] mb-1">Transparent</div>
+            <h3 class="text-xs font-bold uppercase tracking-wider text-[#D97745] mb-2">Affiliate Disclosure</h3>
+            <p class="text-xs text-[#485268] leading-relaxed">We earn a small commission from qualifying purchases through partner links at no extra cost to you.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action Box -->
+      <section class="bg-[#1E2A44] text-white rounded-3xl p-8 sm:p-10 text-center shadow-sm">
+        <h2 class="text-2xl font-black uppercase tracking-tight mb-3">Have a product you want us to test?</h2>
+        <p class="text-xs sm:text-sm text-[#F5F1E8]/80 max-w-lg mx-auto mb-6 leading-relaxed">
+          We are always looking for innovative tech, clever workspace tools, and dependable everyday carry gear. Get in touch with our curation team.
+        </p>
+        <a href="/contact.html" class="inline-block bg-[#D97745] hover:bg-[#D97745]/90 text-white font-bold py-3 px-8 rounded-xl text-xs uppercase tracking-wider transition duration-300 shadow-sm">
+          Contact Our Team
+        </a>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Compliance Footer matching the rest of the site -->
+  <footer class="border-t border-[#E4DDCF] py-10 text-xs text-[#485268] bg-[#EFE9DC]/60">
+    <div class="max-w-6xl mx-auto px-6 text-center space-y-4">
+      <div class="flex justify-center space-x-6 text-sm font-bold text-[#1E2A44] pb-2">
+        <a href="#" class="hover:text-[#D97745] transition">Twitter/X</a>
+        <a href="#" class="hover:text-[#D97745] transition">Pinterest</a>
+        <a href="#" class="hover:text-[#D97745] transition">Instagram</a>
+        <a href="#" class="hover:text-[#D97745] transition">GitHub</a>
+      </div>
+      <p class="font-bold text-[#1E2A44]">Amazon Associate Disclosure</p>
+      <p class="max-w-2xl mx-auto leading-relaxed text-[#485268]">
+        As an Amazon Associate I earn from qualifying purchases. KoryFinds is a participant in the Amazon Services LLC Associates Program.
+      </p>
+      <div class="pt-2 text-[#1E2A44] space-x-4 font-bold">
+        <a href="/about.html" class="hover:text-[#D97745] transition">About Us</a> &bull;
+        <a href="/contact.html" class="hover:text-[#D97745] transition">Contact Us</a> &bull;
+        <a href="/privacy.html" class="hover:text-[#D97745] transition">Privacy Policy</a> &bull;
+        <a href="/disclosure.html" class="hover:text-[#D97745] transition">Affiliate Disclosure</a>
+      </div>
+      <div class="text-[#485268] pt-2">
+        &copy; 2026 KoryFinds. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Country/Currency Selector Logic Hook -->
+  <script>
+    const countrySelector = document.getElementById('countrySelector');
+    if(countrySelector) {
+      countrySelector.addEventListener('change', (e) => {
+        const selectedCountry = e.target.value;
+        console.log("User manually switched currency region to: " + selectedCountry);
+      });
+    }
+  </script>
+
+</body>
+</html>
