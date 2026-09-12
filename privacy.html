@@ -5,85 +5,177 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO & Privacy Indexing Meta Tags -->
-  <title>Privacy Policy - KoryFinds</title>
+  <title>Privacy Policy & Data Protection - KoryFinds</title>
   <meta name="description" content="Read the Privacy Policy for KoryFinds to learn how we handle data, cookies, analytics, and affiliate tracking compliance.">
-  <meta name="robots" content="noindex, follow">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://koryfinds.com/privacy.html">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://koryfinds.com/privacy.html">
-  <meta property="og:title" content="Privacy Policy - KoryFinds">
+  <meta property="og:title" content="Privacy Policy & Data Protection - KoryFinds">
   <meta property="og:description" content="Privacy Policy and affiliate disclosure details for KoryFinds.">
+  <meta property="og:image" content="https://koryfinds.com/og-image.jpg">
 
-  <!-- Tailwind CSS CDN -->
+  <!-- Fonts & Tailwind CSS CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Structured Data for SEO (WebSite & BreadcrumbList / LegalPage Schema) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy",
+    "url": "https://koryfinds.com/privacy.html",
+    "description": "Privacy policy and data protection framework for KoryFinds, detailing affiliate tracking, cookies, and user rights.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "KoryFinds",
+      "url": "https://koryfinds.com",
+      "logo": "https://koryfinds.com/og-image.jpg"
+    }
+  }
+  </script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col justify-between">
+<body class="bg-[#F5F1E8] text-[#485268] font-sans min-h-screen flex flex-col justify-between selection:bg-[#D97745] selection:text-white relative overflow-x-hidden" style="background-image: linear-gradient(#e6e0d5 1px, transparent 1px), linear-gradient(90deg, #e6e0d5 1px, transparent 1px); background-size: 32px 32px;">
 
   <div>
     <!-- Navigation Header -->
-    <header class="bg-white border-b sticky top-0 z-50 shadow-sm">
-      <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="/" class="text-2xl font-black tracking-tight text-blue-600">KoryFinds</a>
-        <nav class="flex items-center space-x-6 text-sm font-medium text-gray-600">
-          <a href="/" class="hover:text-blue-600 transition">Home</a>
-          <a href="/about.html" class="hover:text-blue-600 transition">About</a>
-          <a href="/contact.html" class="hover:text-blue-600 transition">Contact</a>
-          <a href="/privacy.html" class="text-blue-600 font-semibold">Privacy</a>
+    <header class="bg-[#F5F1E8]/90 backdrop-blur-md border-b border-[#E4DDCF] sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="/" class="text-2xl font-black tracking-tight text-[#1E2A44] uppercase">
+          KORYFINDS<span class="text-[#D97745]">.</span>
+        </a>
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-[#485268]">
+          <a href="/" class="hover:text-[#1E2A44] transition">Finds</a>
+          <a href="/about.html" class="hover:text-[#1E2A44] transition">Reviews</a>
+          <a href="/deals.html" class="hover:text-[#1E2A44] transition">Deals</a>
+          <a href="/about.html" class="hover:text-[#1E2A44] transition">About</a>
+          <a href="/contact.html" class="hover:text-[#1E2A44] transition">Contact</a>
         </nav>
       </div>
     </header>
 
     <!-- Main Privacy Content -->
-    <main class="max-w-3xl mx-auto px-4 py-12">
-      <span class="bg-blue-50 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Legal & Transparency</span>
-      <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-3 mb-2 tracking-tight">Privacy Policy</h1>
-      <p class="text-xs text-gray-400 mb-8">Last updated: September 12, 2026</p>
+    <main class="max-w-3xl mx-auto px-6 py-12 sm:py-16">
+      
+      <!-- Hero Section -->
+      <section class="mb-12">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest bg-[#D97745]/10 text-[#D97745] border border-[#D97745]/20">
+          Transparency & Trust
+        </span>
 
-      <div class="space-y-8 text-sm text-gray-600 leading-relaxed bg-white p-6 md:p-8 rounded-2xl border border-gray-200 shadow-sm">
-        <section>
-          <h2 class="text-base font-bold text-gray-900 mb-2">1. Overview</h2>
-          <p>Welcome to KoryFinds ("we," "our," or "us"). We respect your privacy and are committed to protecting any personal information collected through your use of <a href="https://koryfinds.com" class="text-blue-600 hover:underline">koryfinds.com</a>.</p>
+        <h1 class="text-4xl sm:text-5xl font-black uppercase tracking-tight text-[#1E2A44] mt-4">
+          Privacy & Data Protection
+        </h1>
+
+        <p class="mt-4 text-[#485268] text-sm sm:text-base leading-relaxed max-w-2xl">
+          We believe transparency is essential. This page explains how KoryFinds handles visitor information, affiliate links, analytics, and website security.
+        </p>
+        <p class="text-xs text-[#485268]/60 mt-2 font-medium">Last updated: September 12, 2026</p>
+      </section>
+
+      <!-- Quick Summary Card Grid -->
+      <div class="grid md:grid-cols-3 gap-4 mb-12">
+        <div class="bg-white/75 border border-[#E4DDCF] p-5 rounded-2xl shadow-sm">
+          <h3 class="text-[#1E2A44] font-bold text-sm uppercase tracking-wider">No Spam</h3>
+          <p class="text-[#485268] text-xs mt-2 leading-relaxed">
+            We never sell your personal data.
+          </p>
+        </div>
+
+        <div class="bg-white/75 border border-[#E4DDCF] p-5 rounded-2xl shadow-sm">
+          <h3 class="text-[#1E2A44] font-bold text-sm uppercase tracking-wider">Secure Browsing</h3>
+          <p class="text-[#485268] text-xs mt-2 leading-relaxed">
+            SSL encryption protects communications.
+          </p>
+        </div>
+
+        <div class="bg-white/75 border border-[#E4DDCF] p-5 rounded-2xl shadow-sm">
+          <h3 class="text-[#1E2A44] font-bold text-sm uppercase tracking-wider">Affiliate Transparency</h3>
+          <p class="text-[#485268] text-xs mt-2 leading-relaxed">
+            We may earn commissions on purchases.
+          </p>
+        </div>
+      </div>
+
+      <!-- Main Policy Sections Container (Glassmorphism / Paper Texture Match) -->
+      <div class="space-y-8 text-sm text-[#485268] leading-relaxed bg-white border border-[#E4DDCF] p-6 sm:p-10 rounded-3xl shadow-sm">
+        
+        <section class="border-l-4 border-[#D97745] pl-5 sm:pl-6">
+          <h2 class="text-base font-bold text-[#1E2A44] uppercase tracking-tight mb-2">1. Overview</h2>
+          <p class="leading-relaxed">Welcome to KoryFinds ("we," "our," or "us"). We respect your privacy and are committed to protecting any personal information collected through your use of <a href="https://koryfinds.com" class="text-[#D97745] font-semibold hover:underline">koryfinds.com</a>.</p>
         </section>
 
-        <section>
-          <h2 class="text-base font-bold text-gray-900 mb-2">2. Affiliate Disclosure & Tracking Cookies</h2>
-          <p>KoryFinds is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. When you click on outgoing affiliate links on this site and make a purchase, we may receive a small commission at no additional cost to you. Affiliate networks use cookies to track referral traffic and confirm purchases.</p>
+        <section class="border-l-4 border-[#D97745] pl-5 sm:pl-6">
+          <h2 class="text-base font-bold text-[#1E2A44] uppercase tracking-tight mb-2">2. Affiliate Links & Cookies</h2>
+          <p class="leading-relaxed">KoryFinds is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. When you click on outgoing affiliate links on this site and make a purchase, we may receive a small commission at no additional cost to you. Affiliate networks use cookies to track referral traffic and confirm purchases securely.</p>
         </section>
 
-        <section>
-          <h2 class="text-base font-bold text-gray-900 mb-2">3. Information Collection & Analytics</h2>
-          <p>We do not collect personally identifiable information unless voluntarily provided by you (such as submitting an inquiry via our contact form or subscribing to our email newsletter). Standard web server logs and privacy-centric analytics may process anonymized IP addresses, browser specs, and page views solely to optimize website performance and user experience.</p>
+        <section class="border-l-4 border-[#D97745] pl-5 sm:pl-6">
+          <h2 class="text-base font-bold text-[#1E2A44] uppercase tracking-tight mb-2">3. Information Collection & Analytics</h2>
+          <p class="leading-relaxed">We do not collect personally identifiable information unless voluntarily provided by you (such as submitting an inquiry via our contact form or subscribing to our email newsletter). Standard web server logs and privacy-centric analytics may process anonymized IP addresses, browser specs, and page views solely to optimize website performance and user experience.</p>
         </section>
 
-        <section>
-          <h2 class="text-base font-bold text-gray-900 mb-2">4. Third-Party Web Links</h2>
-          <p>Our website contains direct links to external merchant websites (such as Amazon.com). We do not control or accept responsibility for the privacy practices, content, or cookie policies of third-party platforms once you navigate away from koryfinds.com.</p>
+        <section class="border-l-4 border-[#D97745] pl-5 sm:pl-6">
+          <h2 class="text-base font-bold text-[#1E2A44] uppercase tracking-tight mb-2">4. Third-Party Web Links</h2>
+          <p class="leading-relaxed">Our website contains direct links to external merchant websites (such as Amazon.com). We do not control or accept responsibility for the privacy practices, content, or cookie policies of third-party platforms once you navigate away from koryfinds.com.</p>
         </section>
 
-        <section>
-          <h2 class="text-base font-bold text-gray-900 mb-2">5. Contact Information</h2>
-          <p>If you have any questions or data requests regarding this Privacy Policy, please contact us directly at <a href="mailto:contact@koryfinds.com" class="font-medium text-blue-600 hover:underline">contact@koryfinds.com</a> or via our <a href="/contact.html" class="text-blue-600 hover:underline">contact page</a>.</p>
+        <section class="border-l-4 border-[#D97745] pl-5 sm:pl-6">
+          <h2 class="text-base font-bold text-[#1E2A44] uppercase tracking-tight mb-2">5. Email Communications</h2>
+          <p class="leading-relaxed">If you subscribe to our newsletter, we may send product recommendations, buying guides, and promotional content. You can unsubscribe at any time using the opt-out link provided in our emails.</p>
         </section>
+
+        <section class="border-l-4 border-[#D97745] pl-5 sm:pl-6">
+          <h2 class="text-base font-bold text-[#1E2A44] uppercase tracking-tight mb-2">6. Website Security</h2>
+          <p class="leading-relaxed">KoryFinds uses industry-standard security measures including HTTPS encryption and trusted content delivery networks (such as Cloudflare) to help protect visitors and improve website performance.</p>
+        </section>
+
+        <section class="border-l-4 border-[#D97745] pl-5 sm:pl-6">
+          <h2 class="text-base font-bold text-[#1E2A44] uppercase tracking-tight mb-2">7. Contact Information</h2>
+          <p class="leading-relaxed">If you have any questions or data requests regarding this Privacy Policy, please contact us directly at <a href="mailto:contact@koryfinds.com" class="font-semibold text-[#D97745] hover:underline">contact@koryfinds.com</a> or via our <a href="/contact.html" class="text-[#D97745] font-semibold hover:underline">contact page</a>.</p>
+        </section>
+
       </div>
     </main>
   </div>
 
-  <!-- Compliance Footer -->
-  <footer class="bg-white border-t py-10 text-xs text-gray-500">
-    <div class="max-w-6xl mx-auto px-4 text-center space-y-4">
-      <p class="font-semibold text-gray-700">Amazon Associate Disclosure</p>
-      <p class="max-w-2xl mx-auto leading-relaxed">
+  <!-- Compliance Footer matching contact page -->
+  <footer class="border-t border-[#E4DDCF] py-10 text-xs text-[#485268] bg-[#EFE9DC]/60">
+    <div class="max-w-6xl mx-auto px-6 text-center space-y-4">
+      <div class="flex justify-center space-x-6 text-sm font-bold text-[#1E2A44] pb-2">
+        <a href="#" class="hover:text-[#D97745] transition">Twitter/X</a>
+        <a href="#" class="hover:text-[#D97745] transition">Pinterest</a>
+        <a href="#" class="hover:text-[#D97745] transition">Instagram</a>
+        <a href="#" class="hover:text-[#D97745] transition">GitHub</a>
+      </div>
+      <p class="font-bold text-[#1E2A44]">Amazon Associate Disclosure</p>
+      <p class="max-w-2xl mx-auto leading-relaxed text-[#485268]">
         As an Amazon Associate I earn from qualifying purchases. KoryFinds is a participant in the Amazon Services LLC Associates Program.
       </p>
-      <div class="pt-2 text-gray-500 space-x-3 font-medium">
-        <a href="/about.html" class="hover:underline">About Us</a> &bull;
-        <a href="/contact.html" class="hover:underline">Contact Us</a> &bull;
-        <a href="/privacy.html" class="hover:underline">Privacy Policy</a> &bull;
-        <a href="/disclosure.html" class="hover:underline">Affiliate Disclosure</a>
+      <div class="pt-2 text-[#1E2A44] space-x-4 font-bold">
+        <a href="/about.html" class="hover:text-[#D97745] transition">About Us</a> &bull;
+        <a href="/contact.html" class="hover:text-[#D97745] transition">Contact Us</a> &bull;
+        <a href="/privacy.html" class="hover:text-[#D97745] transition">Privacy Policy</a> &bull;
+        <a href="/disclosure.html" class="hover:text-[#D97745] transition">Affiliate Disclosure</a>
       </div>
-      <div class="text-gray-400 pt-2">
+      <div class="text-[#485268] pt-2">
         &copy; 2026 KoryFinds. All rights reserved.
       </div>
     </div>
