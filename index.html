@@ -106,7 +106,36 @@
         </p>
       </section>
 
-      <!-- TODAY'S FIND / SPOTLIGHT (Tangible high-converting anchor under hero) -->
+      <!-- EXPLORE DEPARTMENTS / TAXONOMY SUBFOLDERS (Moved above Today's Find) -->
+      <section id="categories" class="mb-12 max-w-4xl mx-auto">
+        <div class="mb-4">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#D97745]">Taxonomy</span>
+          <h2 class="text-2xl font-black text-[#1E2A44] uppercase tracking-tight">Explore Departments</h2>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+          <a href="/tech/" class="group bg-white border border-[#E4DDCF] rounded-2xl p-4 shadow-sm hover:border-[#D97745] transition flex flex-col items-center text-center">
+            <span class="text-xs font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition">Tech & Gadgets</span>
+          </a>
+          <a href="/home/" class="group bg-white border border-[#E4DDCF] rounded-2xl p-4 shadow-sm hover:border-[#D97745] transition flex flex-col items-center text-center">
+            <span class="text-xs font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition">Home & Kitchen</span>
+          </a>
+          <a href="/edc/" class="group bg-white border border-[#E4DDCF] rounded-2xl p-4 shadow-sm hover:border-[#D97745] transition flex flex-col items-center text-center">
+            <span class="text-xs font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition">Everyday Carry</span>
+          </a>
+          <a href="/workspace/" class="group bg-white border border-[#E4DDCF] rounded-2xl p-4 shadow-sm hover:border-[#D97745] transition flex flex-col items-center text-center">
+            <span class="text-xs font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition">Workspace</span>
+          </a>
+          <a href="/audio/" class="group bg-white border border-[#E4DDCF] rounded-2xl p-4 shadow-sm hover:border-[#D97745] transition flex flex-col items-center text-center">
+            <span class="text-xs font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition">Audio & Sound</span>
+          </a>
+          <a href="daily-swaps.html" class="group bg-[#D97745] hover:bg-[#b85e33] border border-[#D97745] rounded-2xl p-4 shadow-sm transition flex flex-col items-center text-center text-white">
+            <span class="text-xs font-extrabold uppercase tracking-tight">Smart Swaps &rarr;</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- TODAY'S FIND / SPOTLIGHT (Tangible high-converting anchor) -->
       <section class="bg-white border-2 border-[#D97745]/40 rounded-3xl p-6 sm:p-10 shadow-sm max-w-4xl mx-auto mb-14">
         <div class="flex flex-col md:flex-row items-center gap-8">
           <div class="w-full md:w-5/12 bg-[#F5F1E8] rounded-2xl h-56 md:h-64 relative overflow-hidden flex items-center justify-center border border-[#E4DDCF]">
@@ -237,7 +266,35 @@
         </div>
       </section>
 
-      <!-- SHOPS-IN-MOTION: TRENDING REELS / VIDEO SECTION -->
+      <!-- Trust Stats Bar -->
+      <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+        <div class="rounded-xl border border-[#E4DDCF] bg-white/60 p-5 shadow-sm text-center">
+          <div class="text-2xl font-extrabold text-[#1E2A44]">100%</div>
+          <p class="text-xs font-medium text-[#485268] mt-1">Independent Reviews</p>
+        </div>
+        <div class="rounded-xl border border-[#E4DDCF] bg-white/60 p-5 shadow-sm text-center">
+          <div class="text-2xl font-extrabold text-[#1E2A44]">Weekly</div>
+          <p class="text-xs font-medium text-[#485268] mt-1">New Finds Published</p>
+        </div>
+        <div class="rounded-xl border border-[#E4DDCF] bg-white/60 p-5 shadow-sm text-center">
+          <div class="text-2xl font-extrabold text-[#1E2A44]">Hands-On</div>
+          <p class="text-xs font-medium text-[#485268] mt-1">Quality Tested</p>
+        </div>
+        <div class="rounded-xl border border-[#E4DDCF] bg-white/60 p-5 shadow-sm text-center">
+          <div class="text-2xl font-extrabold text-[#1E2A44]">Verified</div>
+          <p class="text-xs font-medium text-[#485268] mt-1">Pricing & Stock</p>
+        </div>
+      </section>
+
+      <!-- ABOUT BLOCK (SEO + Trust block) -->
+      <section class="bg-white border border-[#E4DDCF] rounded-3xl p-8 sm:p-12 shadow-sm max-w-4xl mx-auto mb-16 text-center space-y-3">
+        <h2 class="text-xl sm:text-2xl font-black text-[#1E2A44] uppercase tracking-tight">Why KoryFinds?</h2>
+        <p class="text-sm text-[#485268] max-w-2xl mx-auto leading-relaxed">
+          Every week we review dozens of products and surface only the ones worth your attention. Curated by Kory to cut through sponsored clutter and affiliate noise.
+        </p>
+      </section>
+
+      <!-- SHOPS-IN-MOTION: TRENDING REELS / VIDEO SECTION (Moved below Why KoryFinds) -->
       <section class="mb-16">
         <div class="flex justify-between items-end mb-6">
           <div>
@@ -282,34 +339,6 @@
           </div>
 
         </div>
-      </section>
-
-      <!-- Trust Stats Bar -->
-      <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-        <div class="rounded-xl border border-[#E4DDCF] bg-white/60 p-5 shadow-sm text-center">
-          <div class="text-2xl font-extrabold text-[#1E2A44]">100%</div>
-          <p class="text-xs font-medium text-[#485268] mt-1">Independent Reviews</p>
-        </div>
-        <div class="rounded-xl border border-[#E4DDCF] bg-white/60 p-5 shadow-sm text-center">
-          <div class="text-2xl font-extrabold text-[#1E2A44]">Weekly</div>
-          <p class="text-xs font-medium text-[#485268] mt-1">New Finds Published</p>
-        </div>
-        <div class="rounded-xl border border-[#E4DDCF] bg-white/60 p-5 shadow-sm text-center">
-          <div class="text-2xl font-extrabold text-[#1E2A44]">Hands-On</div>
-          <p class="text-xs font-medium text-[#485268] mt-1">Quality Tested</p>
-        </div>
-        <div class="rounded-xl border border-[#E4DDCF] bg-white/60 p-5 shadow-sm text-center">
-          <div class="text-2xl font-extrabold text-[#1E2A44]">Verified</div>
-          <p class="text-xs font-medium text-[#485268] mt-1">Pricing & Stock</p>
-        </div>
-      </section>
-
-      <!-- ABOUT BLOCK (SEO + Trust block right after stats) -->
-      <section class="bg-white border border-[#E4DDCF] rounded-3xl p-8 sm:p-12 shadow-sm max-w-4xl mx-auto mb-16 text-center space-y-3">
-        <h2 class="text-xl sm:text-2xl font-black text-[#1E2A44] uppercase tracking-tight">Why KoryFinds?</h2>
-        <p class="text-sm text-[#485268] max-w-2xl mx-auto leading-relaxed">
-          Every week we review dozens of products and surface only the ones worth your attention. Curated by Kory to cut through sponsored clutter and affiliate noise.
-        </p>
       </section>
 
       <!-- Category Filter Bar -->
@@ -434,36 +463,6 @@
 
       </div>
 
-      <!-- EXPLORE DEPARTMENTS / TAXONOMY SUBFOLDERS WITH DE-DUPLICATED SMART SWAPS PILL -->
-      <section id="categories" class="mb-16">
-        <div class="mb-6">
-          <span class="text-xs font-bold uppercase tracking-widest text-[#D97745]">Taxonomy</span>
-          <h2 class="text-2xl font-black text-[#1E2A44] uppercase tracking-tight">Explore Departments</h2>
-        </div>
-
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-          <a href="/tech/" class="group bg-white border border-[#E4DDCF] rounded-2xl p-4 shadow-sm hover:border-[#D97745] transition flex flex-col items-center text-center">
-            <span class="text-xs font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition">Tech & Gadgets</span>
-          </a>
-          <a href="/home/" class="group bg-white border border-[#E4DDCF] rounded-2xl p-4 shadow-sm hover:border-[#D97745] transition flex flex-col items-center text-center">
-            <span class="text-xs font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition">Home & Kitchen</span>
-          </a>
-          <a href="/edc/" class="group bg-white border border-[#E4DDCF] rounded-2xl p-4 shadow-sm hover:border-[#D97745] transition flex flex-col items-center text-center">
-            <span class="text-xs font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition">Everyday Carry</span>
-          </a>
-          <a href="/workspace/" class="group bg-white border border-[#E4DDCF] rounded-2xl p-4 shadow-sm hover:border-[#D97745] transition flex flex-col items-center text-center">
-            <span class="text-xs font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition">Workspace</span>
-          </a>
-          <a href="/audio/" class="group bg-white border border-[#E4DDCF] rounded-2xl p-4 shadow-sm hover:border-[#D97745] transition flex flex-col items-center text-center">
-            <span class="text-xs font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition">Audio & Sound</span>
-          </a>
-          <!-- Highlighted Smart Swaps Pill acting as department switcher & feature launchpad -->
-          <a href="daily-swaps.html" class="group bg-[#D97745] hover:bg-[#b85e33] border border-[#D97745] rounded-2xl p-4 shadow-sm transition flex flex-col items-center text-center text-white">
-            <span class="text-xs font-extrabold uppercase tracking-tight">Smart Swaps &rarr;</span>
-          </a>
-        </div>
-      </section>
-
       <!-- Newsletter Capture Section -->
       <section class="bg-white border border-[#E4DDCF] rounded-3xl p-8 sm:p-12 shadow-sm text-center max-w-3xl mx-auto mb-16">
         <span class="inline-block text-xs font-bold uppercase tracking-widest text-[#D97745] mb-2">Stay Updated</span>
@@ -508,7 +507,7 @@
     </div>
   </footer>
 
-  <!-- Clean Manual Navigation Scripts -->
+  <!-- Clean Navigation Scripts & Currency Switcher Handler -->
   <script>
     const carousel = document.getElementById('productCarousel');
     const btnLeft = document.getElementById('slideLeft');
@@ -524,10 +523,23 @@
       });
     }
 
+    // Fully wired Country & Currency Switcher logic with persistence & event dispatch
     const countrySelector = document.getElementById('countrySelector');
     if(countrySelector) {
+      // Restore saved preference if available
+      const savedCountry = localStorage.getItem('koryfinds_country');
+      if(savedCountry) {
+        countrySelector.value = savedCountry;
+      }
+
       countrySelector.addEventListener('change', (e) => {
-        console.log("Currency switched region to: " + e.target.value);
+        const selectedCountry = e.target.value;
+        localStorage.setItem('koryfinds_country', selectedCountry);
+
+        // Dispatch a custom window event so prices or regional storefronts can update dynamically if needed
+        window.dispatchEvent(new CustomEvent('currencyChanged', { detail: { country: selectedCountry } }));
+        
+        console.log("Region/Currency successfully updated to: " + selectedCountry);
       });
     }
   </script>
