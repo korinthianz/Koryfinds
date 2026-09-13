@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Everyday Carry (EDC) Gear & Essentials - KoryFinds</title>
+  <meta name="description" content="Discover minimal wallets, pocket knives, multi-tools, key organizers, and everyday carry gear. Hand-curated by Kory.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://koryfinds.com/edc/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://koryfinds.com/edc/">
+  <meta property="og:title" content="Everyday Carry (EDC) Gear & Essentials - KoryFinds">
+  <meta property="og:description" content="Minimal wallets, multi-tools, and everyday carry gear. Curated by Kory.">
+  <meta property="og:image" content="https://koryfinds.com/og-image.jpg">
+
+  <!-- Fonts & Tailwind CSS CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Scrollbar & Snap Styles -->
+  <style>
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Everyday Carry Essentials",
+    "url": "https://koryfinds.com/edc/",
+    "description": "Curated everyday carry gear, minimal wallets, and pocket tools."
+  }
+  </script>
+</head>
+<body class="bg-[#F5F1E8] text-[#485268] font-sans min-h-screen flex flex-col justify-between selection:bg-[#D97745] selection:text-white relative overflow-x-hidden" style="background-image: linear-gradient(#e6e0d5 1px, transparent 1px), linear-gradient(90deg, #e6e0d5 1px, transparent 1px); background-size: 32px 32px;">
+
+  <div>
+    <!-- Navigation Header -->
+    <header class="bg-[#F5F1E8]/90 backdrop-blur-md border-b border-[#E4DDCF] sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center gap-4">
+        <a href="../index.html" class="text-2xl font-black tracking-tight text-[#1E2A44] uppercase shrink-0">
+          KORYFINDS<span class="text-[#D97745]">.</span>
+        </a>
+
+        <div class="flex items-center space-x-6 shrink-0">
+          <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-[#485268]">
+            <a href="../index.html" class="hover:text-[#1E2A44] transition">Finds</a>
+            <a href="../index.html#categories" class="hover:text-[#1E2A44] transition">Categories</a>
+            <a href="../daily-swaps.html" class="hover:text-[#1E2A44] transition font-bold text-[#D97745]">Smart Swaps</a>
+            <a href="../about.html" class="hover:text-[#1E2A44] transition">Reviews</a>
+            <a href="../about.html" class="hover:text-[#1E2A44] transition">About</a>
+          </nav>
+
+          <!-- Country / Currency Switcher Dropdown -->
+          <div class="relative">
+            <select id="countrySelector" class="bg-white border border-[#E4DDCF] hover:border-[#D97745] text-[#1E2A44] text-xs font-bold py-2 px-3 rounded-xl shadow-sm focus:outline-none focus:border-[#D97745] transition cursor-pointer">
+              <option value="US" selected>🇺🇸 USD ($)</option>
+              <option value="GB">🇬🇧 GBP (£)</option>
+              <option value="EU">🇪🇺 EUR (€)</option>
+              <option value="NG">🇳🇬 NGN (₦)</option>
+              <option value="CA">🇨🇦 CAD ($)</option>
+              <option value="AU">🇦🇺 AUD ($)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-6 py-12 sm:py-16">
+      
+      <!-- Breadcrumb & Department Header -->
+      <section class="text-center max-w-3xl mx-auto mb-10">
+        <div class="flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-wider text-[#485268] mb-3">
+          <a href="../index.html" class="hover:text-[#D97745] transition">Home</a>
+          <span>/</span>
+          <span class="text-[#D97745]">Everyday Carry</span>
+        </div>
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest bg-[#D97745]/15 text-[#D97745] border border-[#D97745]/20 mb-3">
+          Curated by Kory &bull; Pocket Tools & Minimalist Gear
+        </span>
+        <h1 class="text-4xl sm:text-6xl font-black uppercase tracking-tight text-[#1E2A44] mb-6 leading-none">
+          EVERYDAY CARRY <br>ESSENTIALS.
+        </h1>
+        <p class="text-[#485268] text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
+          Streamline your pocket setup with durable minimal wallets, precision multi-tools, key organizers, and rugged pocket utilities built for daily reliability.
+        </p>
+      </section>
+
+      <!-- Sub-Category Filter Bar -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mb-12">
+        <button class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-[#1E2A44] text-white shadow-sm transition">All EDC</button>
+        <button class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-white/70 border border-[#E4DDCF] text-[#485268] hover:border-[#D97745] hover:text-[#1E2A44] transition">Wallets & Holders</button>
+        <button class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-white/70 border border-[#E4DDCF] text-[#485268] hover:border-[#D97745] hover:text-[#1E2A44] transition">Multi-Tools</button>
+        <button class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-white/70 border border-[#E4DDCF] text-[#485268] hover:border-[#D97745] hover:text-[#1E2A44] transition">Keys & Organizers</button>
+        <button class="px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-white/70 border border-[#E4DDCF] text-[#485268] hover:border-[#D97745] hover:text-[#1E2A44] transition">Flashlights & Gear</button>
+      </div>
+
+      <!-- Spotlight Product Feature -->
+      <section class="bg-white border-2 border-[#D97745]/40 rounded-3xl p-6 sm:p-10 shadow-sm max-w-4xl mx-auto mb-14">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="w-full md:w-5/12 bg-[#F5F1E8] rounded-2xl h-56 md:h-64 relative overflow-hidden flex items-center justify-center border border-[#E4DDCF]">
+            <span class="absolute top-3 left-3 bg-[#D97745] text-white text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">Top EDC Pick</span>
+            <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=600&q=80" alt="Minimalist Wallet" class="w-full h-full object-cover">
+          </div>
+          <div class="w-full md:w-7/12 space-y-4 text-left">
+            <div class="flex items-center gap-2">
+              <span class="bg-[#1E2A44] text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Wallets & Holders</span>
+              <span class="text-xs font-semibold text-[#485268]">Tested Sept 2026</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-black text-[#1E2A44] uppercase tracking-tight">
+              Slim RFID-Blocking Minimalist Metal Wallet
+            </h2>
+            <p class="text-sm text-[#485268] leading-relaxed">
+              Ditch the bulky back-pocket bulge. Crafted from aerospace-grade anodized aluminum with elastic card storage and integrated cash strap. Built to last a lifetime.
+            </p>
+            <div class="pt-2 flex flex-wrap items-center gap-4">
+              <a href="https://amazon.com" target="_blank" rel="nofollow noopener" class="bg-[#D97745] hover:bg-[#b85e33] text-white font-bold py-3 px-6 rounded-xl text-xs uppercase tracking-wider transition duration-300 shadow-sm">
+                Check Price on Amazon &rarr;
+              </a>
+              <span class="text-xs font-bold text-[#1E2A44]">Curated by Kory</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDC Product Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        
+        <!-- Product 1 -->
+        <article class="bg-white border border-[#E4DDCF] rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between group hover:border-[#D97745] transition duration-300">
+          <div>
+            <div class="bg-[#F5F1E8] aspect-[4/3] relative overflow-hidden flex items-center justify-center border-b border-[#E4DDCF]">
+              <span class="absolute top-2 left-2 bg-[#1E2A44] text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Multi-Tools</span>
+              <img src="https://images.unsplash.com/photo-1588796366962-4f81a7114b30?auto=format&fit=crop&w=500&q=80" alt="Pocket Multi-Tool" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between text-[10px] text-[#D97745] font-bold uppercase tracking-wider mb-1">
+                <span>Utility Tools</span>
+                <span class="text-[#1E2A44] font-bold text-[9px]">Pocket Size</span>
+              </div>
+              <h2 class="text-base font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition mb-2">
+                Compact Stainless Steel Pocket Multi-Tool
+              </h2>
+              <p class="text-xs text-[#485268] leading-relaxed mb-4">
+                Packs pliers, wire cutters, screwdriver bits, and a locking blade into a featherweight frame that disappears in your pocket.
+              </p>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <a href="https://amazon.com" target="_blank" rel="nofollow noopener" class="w-full bg-[#1E2A44] hover:bg-[#D97745] text-white font-bold py-2.5 px-4 rounded-xl text-xs uppercase tracking-wider transition duration-300 shadow-sm flex items-center justify-center">
+              <span>Check Price on Amazon</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="bg-white border border-[#E4DDCF] rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between group hover:border-[#D97745] transition duration-300">
+          <div>
+            <div class="bg-[#F5F1E8] aspect-[4/3] relative overflow-hidden flex items-center justify-center border-b border-[#E4DDCF]">
+              <span class="absolute top-2 left-2 bg-[#1E2A44] text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Keys & Organizers</span>
+              <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=500&q=80" alt="Key Organizer" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between text-[10px] text-[#D97745] font-bold uppercase tracking-wider mb-1">
+                <span>Key Management</span>
+                <span class="text-[#1E2A44] font-bold text-[9px]">Silent Carry</span>
+              </div>
+              <h2 class="text-base font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition mb-2">
+                Compact Leather Key Organizer Holder
+              </h2>
+              <p class="text-xs text-[#485268] leading-relaxed mb-4">
+                Eliminates annoying pocket jingle and scratches on your phone by neatly stacking keys in a sleek, folding leather enclosure.
+              </p>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <a href="https://amazon.com" target="_blank" rel="nofollow noopener" class="w-full bg-[#1E2A44] hover:bg-[#D97745] text-white font-bold py-2.5 px-4 rounded-xl text-xs uppercase tracking-wider transition duration-300 shadow-sm flex items-center justify-center">
+              <span>Check Price on Amazon</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="bg-white border border-[#E4DDCF] rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between group hover:border-[#D97745] transition duration-300">
+          <div>
+            <div class="bg-[#F5F1E8] aspect-[4/3] relative overflow-hidden flex items-center justify-center border-b border-[#E4DDCF]">
+              <span class="absolute top-2 left-2 bg-[#1E2A44] text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Flashlights</span>
+              <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=500&q=80" alt="EDC Flashlight" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between text-[10px] text-[#D97745] font-bold uppercase tracking-wider mb-1">
+                <span>Illumination</span>
+                <span class="text-[#1E2A44] font-bold text-[9px]">USB-C Rechargeable</span>
+              </div>
+              <h2 class="text-base font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition mb-2">
+                High-Lumen Rechargeable EDC Flashlight
+              </h2>
+              <p class="text-xs text-[#485268] leading-relaxed mb-4">
+                Aircraft-grade aluminum body with incredible brightness modes, magnetic tail cap, and convenient pocket clip for daily carry.
+              </p>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <a href="https://amazon.com" target="_blank" rel="nofollow noopener" class="w-full bg-[#1E2A44] hover:bg-[#D97745] text-white font-bold py-2.5 px-4 rounded-xl text-xs uppercase tracking-wider transition duration-300 shadow-sm flex items-center justify-center">
+              <span>Check Price on Amazon</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="bg-white border border-[#E4DDCF] rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between group hover:border-[#D97745] transition duration-300">
+          <div>
+            <div class="bg-[#F5F1E8] aspect-[4/3] relative overflow-hidden flex items-center justify-center border-b border-[#E4DDCF]">
+              <span class="absolute top-2 left-2 bg-[#1E2A44] text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Multi-Tools</span>
+              <img src="https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?auto=format&fit=crop&w=500&q=80" alt="Pocket Knife" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between text-[10px] text-[#D97745] font-bold uppercase tracking-wider mb-1">
+                <span>Cutting Tools</span>
+                <span class="text-[#1E2A44] font-bold text-[9px]">Razor Sharp</span>
+              </div>
+              <h2 class="text-base font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition mb-2">
+                Minimalist Locking Pocket Knife
+              </h2>
+              <p class="text-xs text-[#485268] leading-relaxed mb-4">
+                Features a durable stainless steel drop-point blade, secure frame lock mechanism, and ergonomic handle for effortless everyday tasks.
+              </p>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <a href="https://amazon.com" target="_blank" rel="nofollow noopener" class="w-full bg-[#1E2A44] hover:bg-[#D97745] text-white font-bold py-2.5 px-4 rounded-xl text-xs uppercase tracking-wider transition duration-300 shadow-sm flex items-center justify-center">
+              <span>Check Price on Amazon</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="bg-white border border-[#E4DDCF] rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between group hover:border-[#D97745] transition duration-300">
+          <div>
+            <div class="bg-[#F5F1E8] aspect-[4/3] relative overflow-hidden flex items-center justify-center border-b border-[#E4DDCF]">
+              <span class="absolute top-2 left-2 bg-[#1E2A44] text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Wallets & Holders</span>
+              <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=500&q=80" alt="Leather Card Holder" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between text-[10px] text-[#D97745] font-bold uppercase tracking-wider mb-1">
+                <span>Classic Carry</span>
+                <span class="text-[#1E2A44] font-bold text-[9px]">Full Grain</span>
+              </div>
+              <h2 class="text-base font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition mb-2">
+                Full-Grain Leather Minimalist Card Sleeve
+              </h2>
+              <p class="text-xs text-[#485268] leading-relaxed mb-4">
+                Aged to perfection. Handcrafted vegetable-tanned leather sleeve designed to hold essential cards and cash with timeless elegance.
+              </p>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <a href="https://amazon.com" target="_blank" rel="nofollow noopener" class="w-full bg-[#1E2A44] hover:bg-[#D97745] text-white font-bold py-2.5 px-4 rounded-xl text-xs uppercase tracking-wider transition duration-300 shadow-sm flex items-center justify-center">
+              <span>Check Price on Amazon</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="bg-white border border-[#E4DDCF] rounded-2xl overflow-hidden shadow-sm flex flex-col justify-between group hover:border-[#D97745] transition duration-300">
+          <div>
+            <div class="bg-[#F5F1E8] aspect-[4/3] relative overflow-hidden flex items-center justify-center border-b border-[#E4DDCF]">
+              <span class="absolute top-2 left-2 bg-[#1E2A44] text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Gear & Utility</span>
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80" alt="Titanium Carabiner" class="w-full h-full object-cover">
+            </div>
+            <div class="p-5">
+              <div class="flex items-center justify-between text-[10px] text-[#D97745] font-bold uppercase tracking-wider mb-1">
+                <span>Carabiners</span>
+                <span class="text-[#1E2A44] font-bold text-[9px]">Ultra Tough</span>
+              </div>
+              <h2 class="text-base font-bold text-[#1E2A44] uppercase tracking-tight group-hover:text-[#D97745] transition mb-2">
+                Titanium Quick-Release Carabiner Clip
+              </h2>
+              <p class="text-xs text-[#485268] leading-relaxed mb-4">
+                Featherlight yet virtually indestructible titanium clip featuring an integrated bottle opener and secure gate closure for belt loops or bags.
+              </p>
+            </div>
+          </div>
+          <div class="p-5 pt-0">
+            <a href="https://amazon.com" target="_blank" rel="nofollow noopener" class="w-full bg-[#1E2A44] hover:bg-[#D97745] text-white font-bold py-2.5 px-4 rounded-xl text-xs uppercase tracking-wider transition duration-300 shadow-sm flex items-center justify-center">
+              <span>Check Price on Amazon</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Newsletter Capture Section -->
+      <section class="bg-white border border-[#E4DDCF] rounded-3xl p-8 sm:p-12 shadow-sm text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block text-xs font-bold uppercase tracking-widest text-[#D97745] mb-2">Stay Updated</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-[#1E2A44] uppercase tracking-tight mb-3">
+          Get Everyday Carry Finds In Your Inbox
+        </h2>
+        <p class="text-sm text-[#485268] mb-6 max-w-xl mx-auto leading-relaxed">
+          No spam, ever. Just weekly high-signal pocket gear upgrades curated by Kory.
+        </p>
+        <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+          <input type="email" required placeholder="Enter your email address" class="flex-1 bg-[#F5F1E8]/50 border border-[#E4DDCF] rounded-xl px-4 py-3 text-sm text-[#1E2A44] placeholder-[#485268]/50 focus:outline-none focus:border-[#D97745] transition">
+          <button type="submit" class="bg-[#1E2A44] hover:bg-[#D97745] text-white font-bold py-3 px-6 rounded-xl text-sm transition duration-300 shadow-sm">
+            Subscribe
+          </button>
+        </form>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Compliance Footer -->
+  <footer class="border-t border-[#E4DDCF] py-10 text-xs text-[#485268] bg-[#EFE9DC]/60">
+    <div class="max-w-6xl mx-auto px-6 text-center space-y-4">
+      <div class="flex justify-center space-x-6 text-sm font-bold text-[#1E2A44] pb-2">
+        <a href="#" class="hover:text-[#D97745] transition">Twitter/X</a>
+        <a href="#" class="hover:text-[#D97745] transition">Pinterest</a>
+        <a href="#" class="hover:text-[#D97745] transition">Instagram</a>
+      </div>
+      <p class="font-bold text-[#1E2A44]">Amazon Associate Disclosure</p>
+      <p class="max-w-2xl mx-auto leading-relaxed text-[#485268]">
+        As an Amazon Associate I earn from qualifying purchases. Curated by Kory.
+      </p>
+      <div class="pt-2 text-[#1E2A44] space-x-4 font-bold">
+        <a href="../about.html" class="hover:text-[#D97745] transition">About Us</a> &bull;
+        <a href="../contact.html" class="hover:text-[#D97745] transition">Contact Us</a> &bull;
+        <a href="../privacy.html" class="hover:text-[#D97745] transition">Privacy Policy</a> &bull;
+        <a href="../disclosure.html" class="hover:text-[#D97745] transition">Affiliate Disclosure</a>
+      </div>
+      <div class="text-[#485268] pt-2">
+        &copy; 2026 KoryFinds. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Currency Switcher Handler -->
+  <script>
+    const countrySelector = document.getElementById('countrySelector');
+    if(countrySelector) {
+      const savedCountry = localStorage.getItem('koryfinds_country');
+      if(savedCountry) {
+        countrySelector.value = savedCountry;
+      }
+
+      countrySelector.addEventListener('change', (e) => {
+        const selectedCountry = e.target.value;
+        localStorage.setItem('koryfinds_country', selectedCountry);
+        window.dispatchEvent(new CustomEvent('currencyChanged', { detail: { country: selectedCountry } }));
+        console.log("Region/Currency successfully updated to: " + selectedCountry);
+      });
+    }
+  </script>
+
+</body>
+</html>
